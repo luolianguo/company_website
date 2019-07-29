@@ -1,0 +1,370 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<link rel="icon" href="images/518/logo.png" type="image/x-icon"/>
+<title>518快运</title>
+
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css?v=1.02" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+
+
+<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <!-- 登录注册模块start -->
+  <div id="loginmodel">
+    <div class="logreg">
+      <div class="closebtn">
+        <div id="cbtn"><a href="./index.html"><img src="images/518/closebtn.png"></a></div>
+      </div>
+      <div class="switchnav">
+        <div class="navitem">
+          <div class="log item active">登录</div>
+        </div>
+        <div class="navitem">
+          <div class="reg item">注册</div>
+        </div>
+      </div>
+      <div class="forget">
+        <div class="fdpwdtitle">重置密码</div>
+      </div>
+      <div class="content">
+        <ul class="logandreg">
+          <li>
+            <div class="contentitem highsplit">
+              <input class="input" id="account" type="text" placeholder="请输入您的手机号">
+            </div>
+            <div class="contentitem highsplit">
+              <input class="input" id="pwd" type="password" placeholder="请输入您的密码">
+            </div>
+            <div class="contentitem highsplit">
+              <button id="submit" class="submit" accesskey="enter">立即登录</button>
+            </div>
+            <div id="forgetpwd" class="tip">
+              <a href="#">忘记密码?</a>
+            </div>
+          </li>
+          <li>
+            <div class="contentitem">
+              <input class="input" id="tel" type="text" placeholder="请输入您的手机号">
+            </div>
+            <div class="contentitem">
+              <input class="input flex3" id="code" type="text" placeholder="请输入验证码">
+              <div class="codewrap">
+                <div class="getcode" id="getcode">
+                  获取验证码
+                </div>
+              </div>
+            </div>
+            <div class="contentitem">
+              <input class="input" id="repwd" type="password" placeholder="请输入您的密码">
+            </div>
+            <div class="contentitem">
+              <input class="input" id="rptpwd" type="password" placeholder="请重复您的密码">
+            </div>
+            <div class="contentitem">
+              <div id="regsubmit" class="submit">立即注册</div>
+            </div>
+          </li>
+        </ul>
+        <div id="findpwd">
+          <div class="contentitem">
+            <input class="input" id="fdtel" type="text" placeholder="请输入您的手机号">
+          </div>
+          <div class="contentitem">
+            <input class="input flex3" id="fdcode" type="text" placeholder="请输入您收到的验证码">
+            <div class="codewrap">
+              <div class="getcode" id="getfdcode">
+                获取验证码
+              </div>
+            </div>
+          </div>
+          <div class="contentitem">
+            <input class="input" id="fdpwd" type="password" placeholder="请输入您的密码">
+          </div>
+          <div class="contentitem">
+            <input class="input" id="rptfdpwd" type="password" placeholder="请重复您的新密码">
+          </div>
+          <div class="contentitem">
+            <div id="fdsubmit" class="submit">重置密码</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 登录注册模块end -->
+
+<!-- Wrap -->
+<div id="wrap"> 
+  
+  <!-- header -->
+  <header> 
+    
+    <!-- Logo -->
+    <div class="container">
+      <div class="logo"><a href="index.html"><img class="img-responsive" src="images/518/logo.png" alt="" ></a></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container navcontainer">
+        <ul class="nav ownmenu">
+          <li class="active"> <a :href="'usercenter_order.html?v='+version">个人中心</a></li>
+          <li> <a :href="'download.html?v='+version">软件下载</a> </li>
+          <li> <a :href="'contact.html?v='+version">联系我们</a> </li>
+          <li> <a :href="'employ.html?v='+version">招募游侠</a> </li>
+          <li> <a :href="'priceexp.html?v='+version">价格说明</a> </li>
+          <li> <a :href="'placeorder.html?v='+version">在线下单</a> </li>
+          <li> <a :href="'index.html?v='+version">首页</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Content -->
+  <div id="content">
+    <section class="blog usercenterpage blog-page padding-top-80 padding-bottom-150">
+      <div class="container"> 
+        
+        <!-- Row -->
+        <div class="row" id="orderdata"> 
+          <div class="col-xs-2 col-md-2 col-sm-2">
+            <div class="menulist">
+              <ul>
+                <li class="firstcategory">
+                  <a :href="'usercenter_order.html?v='+version">
+                    <i class="fa fa-list"></i>
+                    我的订单
+                  </a>
+                </li>
+                <li class="firstcategory">
+                  <p>
+                    <i class="fa fa-money"></i>
+                    我的账户
+                  </p>
+                  <ul>
+                    <li class="secondcategory">
+                      <a :href="'usercenter_balance.html?v='+version">账户余额</a>
+                    </li>
+                    <li class="secondcategory">
+                      <a :href="'usercenter_recharge.html?v='+version">充值</a>
+                    </li>
+                    <li class="secondcategory">
+                      <a :href="'usercenter_ticket.html?v='+version">优惠券</a>
+                    </li>
+                    <li class="secondcategory">
+                      <a :href="'usercenter_invoice.html?v='+version">申请发票</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="firstcategory">
+                  <p>
+                    <i class="fa fa-cog"></i>
+                    设置
+                  </p>
+                  <ul>
+                    <li class="secondcategory">
+                      <a :href="'usercenter_pwd.html?v='+version">修改密码</a>
+                    </li>
+                    <li class="secondcategory">
+                      <a :href="'usercenter_info.html?v='+version">个人信息</a>
+                    </li>
+                    <li class="secondcategory" v-on:click="logout">
+                      <a href="#">退出登录</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-10 col-md-10 col-sm-10">
+            <div class="usercenterwrap">
+              <div class="ordermenu flexbox">
+                <div v-for="item in tabs" v-bind:data-id="item.status" class="flex_item menuitem" v-bind:class="item.active?'active':''" v-on:click="statuschange(item.status)" v-cloak>
+                  {{item.title}}
+                </div>
+                <div class="flex2">
+                  <div class="vote" id="tousu">
+                    <a href="#">投诉</a>
+                  </div>
+                </div>
+              </div>
+              <div class="ordertable">
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th><i class="fa fa-reorder"></i>订单</th>
+                      <th><i class="fa fa-reorder"></i>下单时间</th>
+                      <th><i class="fa fa-map-marker"></i>寄件人/收件人信息</th>
+                      <th><i class="fa fa-calendar"></i>费用信息</th>
+                      <th><i class="fa fa-wrench"></i>游侠</th>
+                      <th><i class="fa fa-monile"></i>电话</th>
+                      <th><i class="fa fa-cog"></i>状态/操作</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr v-for="item in order" v-cloak>
+                      <td class="orderitemcontent">{{item.ordernum}}{{item.ordergoodstype}}</td>
+                      <td class="orderitemcontent">{{item.createtime}}</td>
+                      <td class="orderitemcontent"><p>{{item.fromaddress}}</br>{{item.toaddress}}</p></td>
+                      <td class="orderitemcontent">￥{{item.cost}}</td>
+                      <td class="orderitemcontent">{{item.ridername?item.ridername:"无"}}</td>
+                      <td class="orderitemcontent">{{item.mobile?item.mobile:"无"}}</td>
+                      <td class="orderitemcontent">
+                        <div class="status">{{item.orderstate}}</div>
+                        <div class="controlbtns">
+                          <div class="cbtn" v-if="item.deletlbtn==true" v-on:click="deletorder(item.ordernum)">删除</div>
+                          <div class="cbtn" v-if="item.cancelbtn==true" v-on:click="cancelorder(item.ordernum)">取消</div>
+                          <div class="cbtn" v-if="item.confirm==true" v-on:click="confirmorder(item.ordernum)">确认完成</div>
+                          <div class="cbtn" v-if="item.comment==true" v-on:click="commentorder(item.ordernum)">评价</div>                
+                        </div>
+                      </td>
+                    </tr>
+                    <tr v-if="order.length==0"><td colspan="6" class="table-tip">暂无记录</td></tr>
+                  </tbody>
+                </table>
+                <div id="dialoglayer">
+                  <div class="dialogwrap">
+                      <div class="title">投诉 <span class="cancel">X</span></div>
+                      <div class="content">
+                        <div class="smtitle">
+                          投诉问题:
+                        </div>
+                        <div class="smcontent">
+                           <textarea class="quecontentarea" v-model="tousuconetent" placeholder="请输入您要投诉的问题"></textarea>
+                        </div>
+                        <div class="smtitle">
+                         联系方式:
+                        </div>
+                        <div class="smcontent">
+                            <input class="contactway" type="text" v-model="tousucontact" name="" placeholder="请输入手机号或邮箱">
+                        </div>
+                      </div>
+                      <div class="btns flexbox">
+                        <div class="flex_item">
+                          <div class="diabtn" v-on:click="subtousu">提交</div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div id="commentlayer" v-bind:class="commenthide?'show':''">
+                    <div class="title">评价<span class="cancel" v-on:click="cancelcomment">X</span></div>
+                    <div class="content">
+                        <div class="smtitle">
+                         内容:
+                        </div>
+                        <div class="smcontent">
+                           <textarea class="quecontentarea" v-model="commentcontent" placeholder="请输入您的评价内容"></textarea>
+                        </div>
+                        <div class="smtitle">
+                         星级:
+                        </div>
+                        <div class="smcontent">
+                            <div class="stars">
+                              <div class="staritem" v-on:click="starselect(1)"><img v-bind:src="selectstar>=1?'images/518/xx.png':'images/518/xx2.png'"></div>
+                              <div class="staritem" v-on:click="starselect(2)"><img v-bind:src="selectstar>=2?'images/518/xx.png':'images/518/xx2.png'"></div>
+                              <div class="staritem" v-on:click="starselect(3)"><img v-bind:src="selectstar>=3?'images/518/xx.png':'images/518/xx2.png'"></div>
+                              <div class="staritem" v-on:click="starselect(4)"><img v-bind:src="selectstar>=4?'images/518/xx.png':'images/518/xx2.png'"></div>
+                              <div class="staritem" v-on:click="starselect(5)"><img v-bind:src="selectstar>=5?'images/518/xx.png':'images/518/xx2.png'"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="btns flexbox">
+                      <div class="flex_item">
+                        <div class="diabtn" v-on:click="commentsub">提交</div>
+                      </div>
+                    </div>
+                </div>
+                <div class="pagenav">
+                  <ul class="pagination" id="pageNav">
+                  </ul>
+                </div>
+                <div class="orderlistcount">
+                  <p>总共<span class="totalorderpage">{{totalpage}}</span>页，<span class="totalordercount">{{count}}</span>条记录，每页{{pagesize}}条记录</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="footwraper">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- FOOTER ABOUT -->
+          <div class="col-xs-4 col-md-4 col-sm-4">
+              <div class="logo_name">
+                <img src="images/518/logo.png" alt="">
+                <p>518快运</p>
+              </div>
+          </div>
+          
+          <!-- Subscribe -->
+          <div class="col-xs-4 col-md-4 col-sm-4">
+              <ul class="footlist">
+                <li><a :href="'index.html?v='+version">网站首页&nbsp;&nbsp; HOME</a></li>
+                <li><a :href="'placeorder.html?v='+version">在线下单&nbsp;&nbsp; PLACEORDER</a></li>
+                <li><a :href="'priceexp.html?v='+version">价格说明&nbsp;&nbsp; PRICEDESC</a></li>
+                <li><a :href="'employ.html?v='+version">招募游侠&nbsp;&nbsp; RECRUIT</a></li>
+                <li><a :href="'contact.html?v='+version">联系我们&nbsp;&nbsp; CONTACT</a></li>
+                <li><a :href="'download.html?v='+version">软件下载&nbsp;&nbsp; DOWNLOAD</a></li>
+                <li><a :href="'usercenter_order.html?v='+version">个人中心&nbsp;&nbsp; USERCENTER</a></li>
+              </ul>
+          </div>
+
+          <!--company about-->
+          <div class="col-xs-4 col-md-4 col-sm-4">
+              <div class="companyifno">
+                <h3>{{company}}</h3>
+                <p>服务热线：{{fwtel}}</p>
+                <p>公司地址：{{companyadd}}</p>   
+                <p>{{beian}}</p>
+                <img v-bind:src="gzhqrcode" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="dilogmessage"></div>
+</div>
+<script src="js/vue.min.js"></script>
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.cookie.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/own-menu.js"></script> 
+<script src="js/jquery.isotope.min.js"></script> 
+<script src="js/jquery.prettyPhoto.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+
+<script src="js/custom.js"></script>
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+
+<script src="layer/layer.js"></script>
+<script>document.write("<script type='text/javascript' src='js/main.js?v=" +(new Date()).getTime()+ "'><\/script>");</script>
+<script src="js/indexdeel/logreg.js"></script>
+<script src="js/custom.js"></script>
+<script>document.write("<script type='text/javascript' src='js/usercenter/orderdeel.js?v=" +(new Date()).getTime()+ "'><\/script>");</script>
+</body>
+</html>

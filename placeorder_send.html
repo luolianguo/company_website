@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ch">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="快运,跑腿,闲暇赚钱">
+<meta name="description" content="518快运,快捷服务您的生活">
+<link rel="icon" href="images/518/logo.png" type="image/x-icon"/>
+<title>518快运</title>
+
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css?v=1.02" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+
+
+<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&libraries=drawing,geometry,autocomplete,convertor&key=DHJBZ-ZQACV-NHQPF-UFOJK-WITU3-GJFFV"></script>
+<style type="text/css">
+  #pagerdivider ul li.active{
+    border-color: #fe8b03 !important;
+    color: #fe8b03 !important;
+  }
+</style>
+</head>
+<body>
+
+  <!-- 登录注册模块start -->
+  <div id="loginmodel">
+    <div class="logreg">
+      <div class="closebtn">
+        <div id="cbtn"><a href="./index.html"><img src="images/518/closebtn.png"></a></div>
+      </div>
+      <div class="switchnav">
+        <div class="navitem">
+          <div class="log item active">登录</div>
+        </div>
+        <div class="navitem">
+          <div class="reg item">注册</div>
+        </div>
+      </div>
+      <div class="forget">
+        <div class="fdpwdtitle">重置密码</div>
+      </div>
+      <div class="content">
+        <ul class="logandreg">
+          <li>
+            <div class="contentitem highsplit">
+              <input class="input" id="account" type="text" placeholder="请输入您的手机号">
+            </div>
+            <div class="contentitem highsplit">
+              <input class="input" id="pwd" type="password" placeholder="请输入您的密码">
+            </div>
+            <div class="contentitem highsplit">
+              <button id="submit" class="submit" accesskey="enter">立即登录</button>
+            </div>
+            <div id="forgetpwd" class="tip">
+              <a href="#">忘记密码?</a>
+            </div>
+          </li>
+          <li>
+            <div class="contentitem">
+              <input class="input" id="tel" type="text" placeholder="请输入您的手机号">
+            </div>
+            <div class="contentitem">
+              <input class="input flex3" id="code" type="text" placeholder="请输入验证码">
+              <div class="codewrap">
+                <div class="getcode" id="getcode">
+                  获取验证码
+                </div>
+              </div>
+            </div>
+            <div class="contentitem">
+              <input class="input" id="repwd" type="password" placeholder="请输入您的密码">
+            </div>
+            <div class="contentitem">
+              <input class="input" id="rptpwd" type="password" placeholder="请重复您的密码">
+            </div>
+            <div class="contentitem">
+              <div id="regsubmit" class="submit">立即注册</div>
+            </div>
+          </li>
+        </ul>
+        <div id="findpwd">
+          <div class="contentitem">
+            <input class="input" id="fdtel" type="text" placeholder="请输入您的手机号">
+          </div>
+          <div class="contentitem">
+            <input class="input flex3" id="fdcode" type="text" placeholder="请输入您收到的验证码">
+            <div class="codewrap">
+              <div class="getcode" id="getfdcode">
+                获取验证码
+              </div>
+            </div>
+          </div>
+          <div class="contentitem">
+            <input class="input" id="fdpwd" type="password" placeholder="请输入您的密码">
+          </div>
+          <div class="contentitem">
+            <input class="input" id="rptfdpwd" type="password" placeholder="请重复您的新密码">
+          </div>
+          <div class="contentitem">
+            <div id="fdsubmit" class="submit">重置密码</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 登录注册模块end -->
+<!-- Wrap -->
+<div id="wrap"> 
+  
+  <!-- header -->
+  <header> 
+    
+    <!-- Logo -->
+    <div class="container">
+      <div class="logo"><a href="index.html"><img class="img-responsive" src="images/518/logo.png" alt="" ></a></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container navcontainer">
+        <ul class="nav ownmenu">
+          <li> <a :href="'usercenter_order.html?v='+version">个人中心</a></li>
+          <li> <a :href="'download.html?v='+version">软件下载</a> </li>
+          <li> <a :href="'contact.html?v='+version">联系我们</a> </li>
+          <li> <a :href="'employ.html?v='+version">招募游侠</a> </li>
+          <li> <a :href="'priceexp.html?v='+version">价格说明</a> </li>
+          <li class="active"> <a :href="'placeorder.html?v='+version">在线下单</a> </li>
+          <li> <a :href="'index.html?v='+version">首页</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Content -->
+  <div id="content" class="colorgray"> 
+    <section class="placeorder">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-md-6 marginbottom50">
+            <div class="categorylist">
+              <div class="categoryitem">
+                <a :href="'placeorder.html?v='+version">
+                  <div class="itemicon">
+                    <i class="fa fa-briefcase"></i>
+                  </div>
+                  <p class="itemtitle flex_item">帮我买</p>
+                </a>
+              </div>
+              <div class="categoryitem active">
+                <a :href="'placeorder_send.html?v='+version">
+                  <div class="itemicon">
+                    <i class="fa fa-location-arrow"></i>
+                  </div>
+                  <p class="itemtitle flex_item">帮我送</p>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-12" id="placeordersend">
+            <div class="formwrap">
+              <div class="formitem formbox1">
+                <div class="content">
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>物品类型</p>
+                    </div>
+                    <div class="itemvalue flex8 flexbox">
+                      <div class="valueitem flex_item" v-for="item in servicetypelist">
+                        <div class="valuecontent" v-on:click="typeselect(item.id)">
+                          <div class="selected" v-bind:class="item.select?'active':''"></div>
+                          <p class="valuename" v-cloak>{{item.title}}</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="placeholder flex_item"></div>
+                  </div>
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>发货地址</p>
+                    </div>
+                    <div class="itemvalue flexbox flex8">
+                        <div class="inputwrap flexbox" style="position: relative;">
+                          <input class="input flex10 theholderstyle" v-model="sendaddress" @focus="getsearchresult(0)" id="sendaddress" v-bind:value="sendaddress" type="text" placeholder="请填写发货地址">
+                          <div class="getlocat flex_item" v-on:click="getlocation(0)">
+                            <span class="custicon"><img src="images/518/locat.png" alt=""></span>
+                            <p>定位</p>
+                          </div>
+                          <div v-if="searchlistshow==true&&selecttoaddress==0" style="position: absolute;top:40px;left:0px;z-index:999;width: 100%;max-height:450px;overflow: scroll;overflow-x: hidden;background-color: #fff;" v-cloak> 
+                            <ul style="border:1px solid #aaa;" v-if="searchlist.length>0">
+                              <li v-for="item in searchlist" @click="searchaddselect(item)" style="width: 100%;margin:0px;cursor: pointer;border-bottom: 1px solid #eee;">
+                                <p style="width: 100%;font-size:14px;color: #333;line-height: 25px;text-indent: 10px;">{{item.name}}</p>
+                                <p style="width: 100%;font-size: 12px;color: #999;line-height:16px;text-indent: 10px;">{{item.address}}</p>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="placeholder flex_item"></div>
+                  </div>
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>地址详情</p>
+                    </div>
+                    <div class="itemvalue flexbox flex8">
+                      <div class="inputwrap">
+                          <input class="input theholderstyle" id="receiveremarkaddress" v-model="remarksendaddress" type="text" placeholder="请填写具体楼号及门牌号">
+                      </div>
+                    </div>
+                    <div class="placeholder flex_item"></div>
+                  </div>
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>发货人</p>
+                    </div>
+                    <div class="itemvalue flexbox flex2">
+                      <div class="inputwrap">
+                          <input class="input necessary theholderstyle" v-model="sender" type="tel" placeholder="请填写发货人姓名">
+                      </div>
+                    </div>
+                    <div class="placeholder flex7">
+                      <p class="vip">必填 !</p>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>发货电话</p>
+                    </div>
+                    <div class="itemvalue flexbox flex2">
+                      <div class="inputwrap withbtn">
+                          <input class="input necessary theholderstyle" v-model="sendtel" placeholder="请填写手机号码">
+                      </div>
+                      <div class="inputbtn nocolor" @click="setsendifcall">
+                        <img :src="sendifcall==1?'images/518/call.png':'images/518/nocall.png'" alt="是否致电" v-cloak>
+                      </div>
+                    </div>
+                    <div class="placeholder flex7">
+                      <p class="vip">必填 !</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="formitem formbox2">
+                <div class="content">
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>收货地址</p>
+                    </div>
+                    <div class="itemvalue flexbox flex8">
+                      <div class="inputwrap flexbox" style="position: relative;">
+                        <input class="input flex10 theholderstyle" v-model="receiveaddress" id="receiveaddress" @focus="getsearchresult(1)" type="text" placeholder="请填写收货地址">
+                        <div class="getlocat flex_item"  v-on:click="getlocation(1)">
+                          <span class="custicon"><img src="images/518/locat.png" alt=""></span>
+                          <p>定位</p>
+                        </div>
+                        <div v-if="searchlistshow==true&&selecttoaddress==1" style="position: absolute;top:40px;left:0px;z-index:999;width: 100%;max-height:450px;overflow: scroll;overflow-x: hidden;background-color: #fff;" v-cloak> 
+                            <ul style="border:1px solid #aaa;" v-if="searchlist.length>0">
+                              <li v-for="item in searchlist" @click="searchaddselect(item)" style="width: 100%;margin:0px;cursor: pointer;border-bottom: 1px solid #eee;">
+                                <p style="width: 100%;font-size:14px;color: #333;line-height: 25px;text-indent: 10px;">{{item.name}}</p>
+                                <p style="width: 100%;font-size: 12px;color: #999;line-height:16px;text-indent: 10px;">{{item.address}}</p>
+                              </li>
+                            </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="placeholder flex_item"></div>
+                  </div>
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>地址详情</p>
+                    </div>
+                    <div class="itemvalue flexbox flex8">
+                      <div class="inputwrap">
+                          <input class="input theholderstyle" v-model="remarkreceivaddress" id="buyremarkaddress" type="text" placeholder="请填写具体楼号及门牌号">
+                      </div>
+                    </div>
+                    <div class="placeholder flex_item"></div>
+                  </div>
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>收货人</p>
+                    </div>
+                    <div class="itemvalue flexbox flex2">
+                      <div class="inputwrap">
+                          <input class="input necessary theholderstyle" v-model="receiver" type="tel" placeholder="请填写收货人姓名">
+                      </div>
+                    </div>
+                    <div class="placeholder flex7">
+                      <p class="vip">必填 !</p>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>收货电话</p>
+                    </div>
+                    <div class="itemvalue flexbox flex2">
+                      <div class="inputwrap withbtn">
+                          <input class="input necessary theholderstyle" v-model="receivetel" type="tel" placeholder="请填写手机号码">
+                      </div>
+                      <div class="inputbtn nocolor" @click="setreceiveifcall">
+                        <img :src="receiveifcall==1?'images/518/call.png':'images/518/nocall.png'" alt="是否致电" v-cloak>
+                      </div>
+                    </div>
+                    <div class="placeholder flex7">
+                      <p class="vip">必填 !</p>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>物品重量</p>
+                    </div>
+                    <div class="itemvalue flexbox flex2">
+                      <div class="inputwrap">
+                        <div class="dateselect">
+                          <div class="selectedcontent flexbox">
+                            <div class="selectedvalue flex_item" id="weightvalue" v-cloak>
+                              {{selectweight?selectweight:'请选择物品重量'}}
+                            </div>
+                          </div>
+                          <div class="selectitem" id="weightlist">
+                            <ul>
+                              <li class="weighttitem" v-for="item in weightlist" v-bind:data-value="item" v-on:click="weightselect(item.index,item.name)">{{item.name}}</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="placeholder flex7">
+                      <p class="vip">必选 !</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="formitem formbox3">
+                <div class="content">
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>小费</p>
+                    </div>
+                    <div class="itemvalue flexbox flex2">
+                      <div class="inputwrap">
+                        <div class="dateselect">
+                          <div class="selectedcontent flexbox">
+                            <div class="selectedvalue flex_item" id="gratuityvalue" v-cloak>
+                              {{gratuity!=0?gratuity+'元':'请选择小费'}}
+                            </div>
+                          </div>
+                          <div class="selectitem" id="gratuitylist">
+                            <ul>
+                              <li class="gratuityitem" style="cursor: pointer;" v-on:click="nogratuity">不给小费</li>
+                              <li class="gratuityitem" v-for="item in gratuities" v-bind:data-value="item" v-on:click="gratuityselect(item)">{{item}}元</li>
+                              <li class="gratuityitem" style="cursor: pointer;" v-on:click="showcustomgratuity">自定义</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="itemvalue flexbox flex2">
+                      <div class="inputwrap withbtn" v-if="customgratuityshow==true" v-cloak>
+                          <input class="input theholderstyle" v-model="inputgratuity" type="text" placeholder="自定义小费金额">
+                      </div>
+                      <div class="inputbtn" @click="confirmgratuity" v-if="customgratuityshow==true" v-cloak>
+                        确认
+                      </div>
+                    </div>
+                    <div class="placeholder flex5">
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>发货时间</p>
+                    </div>
+                    <div class="itemvalue flexbox flex2">
+                      <div class="inputwrap">
+                        <div class="dateselect">
+                          <div class="selectedcontent flexbox">
+                            <div class="selectedvalue flex_item" id="rightnow">
+                              立即发货
+                            </div>
+                          </div>
+                          <div class="selectitem timeselectitem">
+                            <ul>
+                              <li data-value="立即发货">立即发货</li>
+                              <li data-value="预约时间">预约时间</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="itemvalue flex2" id="senddate">
+                      <div class="inputwrap flexbox">
+                        <input class="input necessary flex5" id="datepicker" readonly="readonly" type="text" placeholder="请选择时间">
+                        <div class="getlocat flex_item">
+                          <span class="fa fa-calendar"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="placeholder flex5">
+                      <p class="vip">必填 !</p>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>备注信息</p>
+                    </div>
+                    <div class="itemvalue flexbox flex8">
+                      <div class="inputwrap">
+                          <input class="input theholderstyle" v-model="remarkeinfo" id="remarkeinfo" type="text" placeholder="请填写您的备注信息">
+                      </div>
+                    </div>
+                    <div class="placeholder flex_item"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="formitem formbox4">
+                <div class="content halfcontent">
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>订单距离</p>
+                    </div>
+                    <div class="itemvalue flexbox flex4">
+                      <p class="orderresult" id="distance" v-cloak>{{disntance}}公里</p>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox">
+                    <div class="itemtitle flex_item">
+                      <p>跑腿费用</p>
+                    </div>
+                    <div class="itemvalue flexbox flex4">
+                      <p class="orderresult" id="errandscost" v-cloak>{{runprice}}元</p>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox" id="yhq">
+                    <div class="itemtitle flex_item">
+                      <p>优惠券</p>
+                    </div>
+                    <div class="itemvalue flexbox flex2">
+                      <div class="inputwrap">
+                        <div class="dateselect">
+                          <div class="selectedcontent flexbox">
+                            <div class="selectedvalue flex_item" id="ticketvalue" v-cloak>
+                              {{ticketinfo}}
+                            </div>
+                          </div>
+                          <div class="selectitem ticketselectitem" id="ticketlist">
+                            <ul>
+                              <li class="ticketitem" v-for="item in ticketlist" v-bind:data-value="item.price" v-on:click="ticketselect(item.id,item.price)">减免{{item.price}}元</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="placeholder flex2">
+                      <button id="noticket" class="sendcode" v-on:click="noticket">不使用优惠券</button>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox" id="zyh">
+                    <div class="itemtitle flex_item">
+                      <p>总优惠</p>
+                    </div>
+                    <div class="itemvalue flexbox flex4">
+                      <p class="orderresult" id="totalticket" v-cloak>{{ticketprice}}元</p>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox" id="zje">
+                    <div class="itemtitle flex_item">
+                      <p>总金额</p>
+                    </div>
+                    <div class="itemvalue flexbox flex4">
+                      <p class="orderresult" v-cloak>{{totalmoney}}元</p>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox" id="yzmtel">
+                    <div class="itemtitle flex_item">
+                      <p>手机号码</p>
+                    </div>
+                    <div class="itemvalue flexbox flex4">
+                      <div class="inputwrap">
+                          <input class="input theholderstyle" v-model="usertel" id="yzmtelnumber" type="tel" placeholder="请填写接收验证码的手机号码">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox" id="yzmget">
+                    <div class="itemtitle flex_item">
+                      <p>短信验证</p>
+                    </div>
+                    <div class="itemvalue flexbox flex2">
+                      <div class="inputwrap">
+                          <input class="input theholderstyle" v-model="yzm" id="placeorderyzm" type="tel" placeholder="请填写短信验证码">
+                      </div>
+                    </div>
+                    <div class="placeholder flex2">
+                      <button id="sendcode" class="sendcode" v-on:click="getcodemessage" v-cloak>{{codemessage}}</button>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox" id="zffs">
+                    <div class="itemtitle flex_item">
+                      <p>支付方式</p>
+                    </div>
+                    <div class="itemvalue flexbox flex4">
+                      <div class="rechargeitem flex_item" v-for="item in rechargetype">
+                        <div class="rechargecontent" v-bind:class="item.select?'active':''" data-type="0" v-on:click="rechargetypeselect(item.id)">
+                          {{item.title}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox" id="confirmorder">
+                    <div class="itemvalue flex_item">
+                      <div class="confirmorder">
+                          <button class="placeorder" v-on:click="confirmorder" id="placeorder">确认订单</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="contentitem flexbox" id="payorder">
+                    <div class="itemvalue flex_item">
+                      <div class="confirmorder">
+                          <button class="placeorder" v-on:click="paynow" id="paynow">立即支付</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="content halfcontent">
+                  <div id="mapcontainer">
+                    
+                  </div>
+                </div>
+                <div class="clearfix"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="footwraper">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- FOOTER ABOUT -->
+          <div class="col-md-4">
+              <div class="logo_name">
+                <img src="images/518/logo.png" alt="">
+                <p>518快运</p>
+              </div>
+          </div>
+          
+          <!-- Subscribe -->
+          <div class="col-md-4">
+              <ul class="footlist">
+                <li><a :href="'index.html?v='+version">网站首页&nbsp;&nbsp; HOME</a></li>
+                <li><a :href="'placeorder.html?v='+version">在线下单&nbsp;&nbsp; PLACEORDER</a></li>
+                <li><a :href="'priceexp.html?v='+version">价格说明&nbsp;&nbsp; PRICEDESC</a></li>
+                <li><a :href="'employ.html?v='+version">招募游侠&nbsp;&nbsp; RECRUIT</a></li>
+                <li><a :href="'contact.html?v='+version">联系我们&nbsp;&nbsp; CONTACT</a></li>
+                <li><a :href="'download.html?v='+version">软件下载&nbsp;&nbsp; DOWNLOAD</a></li>
+                <li><a :href="'usercenter_order.html?v='+version">个人中心&nbsp;&nbsp; USERCENTER</a></li>
+              </ul>
+          </div>
+
+          <!--company about-->
+          <div class="col-md-4">
+              <div class="companyifno">
+                <h3>{{company}}</h3>
+                <p>服务热线：{{fwtel}}</p>
+                <p>公司地址：{{companyadd}}</p>   
+                <p>{{beian}}</p>
+                <img v-bind:src="gzhqrcode" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="dilogmessage"></div>
+  <div id="backcover">
+    
+  </div>
+  <div id="maplayer">
+    <div style="width:400px;height:auto;position: absolute;top: 0px;left: 0px;z-index: 999;">
+        <span @click="setcitylistshow" style="cursor: pointer;margin-left:5px;display: inline-block;vertical-align: middle;width: 70px;height: 40px;line-height:40px;text-align: center;background-color: #fff;border: 1px solid #ddd;"><span style="vertical-align: middle;display:inline-block;max-width:50px;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;">{{searchregion}}</span><i style="background-image: url('images/518/sj.png');background-size: cover;width: 10px;height: 6px;display: inline-block;vertical-align: middle;"></i></span>
+        <input type='text' v-model="searchplace" style="margin:10px 0px 10px -4px;border: 1px solid #ccc;vertical-align: middle;border-left:none;width: 250px;height: 40px;font-size:14px;line-height: 40px;text-indent: 10px;" @keyup.13="getResult(1)" placeholder="请输入要搜索的地点" />
+        <input type="button" value="搜索" style="border: none;background-color: #131426;font-size: 14px;color: #fff;vertical-align: middle;width: 50px;border-radius:2px;height: 38px;line-height: 40px;text-align: center;" @click="getResult(1)"/>
+        <div id="pageIndexLabel" style="width: 100px;"></div>
+    </div>
+    <div style="width:600px;max-height:300px;overflow:scroll;overflow-x:hidden;background-color:#fff;position:absolute;top:60px;left:0px;z-index:999;" v-if="citylistshow==true">
+      <div style="width: 100%;height: auto;" v-for="item in citylist">
+        <p style="display: block;width: 100%;height: 20px;line-height: 20px;text-align: left;text-indent:10px;font-size: 14px;color: #333;">{{item.pinyin}}</p>
+        <ul style="width: 100%;height:auto;display: block;">
+          <li v-for="ditem in item.children" style="cursor: pointer;float: left;list-style: none;width:80px;text-overflow: ellipsis;white-space: nowrap;overflow: hidden;text-align: center;height: 30px;line-height: 30px;font-size: 14px;color: #333;" @click="cityselect(ditem.name)">{{ditem.name}}</li>
+          <p style="clear: both;"></p>
+        </ul>
+      </div>
+    </div>
+    <div id="iframemapcontainer">
+      <div id="locationpos">
+        <img src="images/518/chooselocation.png" />
+      </div>
+    </div>
+    <div id="pagerdivider" style="width: 100%;height: 40px;text-align:center;background-color: #fff;border-bottom: 1px solid #eee;">
+      <ul style="display: inline-block;height: 20px;margin-top: 10px;overflow:hidden;">
+        <li style="cursor: pointer;float: left;width: 20px;height: 20px;margin-right: 10px;border: 1px solid #ddd;border-radius: 3px;color: #333;text-align: center;line-height:20px;" v-for="num in searchresultcount" @click="getResult(num)" :class="searchactivepage==num?'active':''">
+          {{num}}
+        </li>
+      </ul>
+    </div>
+    <div id="nearaddress">
+      <ul>
+      </ul>
+      <div id="cancelmap">
+        取消
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/vue.min.js"></script>
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.cookie.js"></script> 
+<script src="js/jquery.qrcode.min.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/own-menu.js"></script> 
+<script src="js/jquery.isotope.min.js"></script> 
+<script src="js/jquery.prettyPhoto.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+
+
+<script src="js/custom.js"></script>
+<script src="js/laydate/laydate.js"></script>
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+
+<script src="layer/layer.js"></script>
+<script>document.write("<script type='text/javascript' src='js/main.js?v=" +(new Date()).getTime()+ "'><\/script>");</script>
+<script src="js/indexdeel/logreg.js"></script>
+<script>document.write("<script type='text/javascript' src='js/placeorder/placeordersend.js?v=" +(new Date()).getTime()+ "'><\/script>");</script>
+</body>
+</html>

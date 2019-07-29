@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="快运,跑腿,闲暇赚钱">
+<meta name="description" content="518快运,快捷服务您的生活">
+<link rel="icon" href="images/518/logo.png" type="image/x-icon"/>
+<title>518快运</title>
+
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css?v=1.02" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+
+
+<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!-- Wrap -->
+<div id="wrap"> 
+  
+  <!-- header -->
+  <header> 
+    
+    <!-- Logo -->
+    <div class="container">
+      <div class="logo"><a href="index.html"><img class="img-responsive" src="images/518/logo.png" alt="" ></a></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container navcontainer">
+        <ul class="nav ownmenu">
+          <li> <a :href="'usercenter_order.html?v='+version">个人中心</a></li>
+          <li> <a :href="'download.html?v='+version">软件下载</a> </li>
+          <li class="active"> <a :href="'contact.html?v='+version">联系我们</a> </li>
+          <li> <a :href="'employ.html?v='+version">招募游侠</a> </li>
+          <li> <a :href="'priceexp.html?v='+version">价格说明</a> </li>
+          <li> <a :href="'placeorder.html?v='+version">在线下单</a> </li>
+          <li> <a :href="'index.html?v='+version">首页</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- SUB BANNER -->
+  <section class="sub-bnr" v-cloak>
+    <img :src="picimg" alt="pic" style="width: 100%;height: auto;">
+  </section>
+  
+  <!-- Content -->
+  <div id="content"> 
+    
+    <!-- CONTACT -->
+    <section class="contact-page"> 
+      <div class="contactwraper">
+        <!-- CONTACT FORM -->
+        <div class="container">
+          <div class="row">
+              <div class="col-xs-4 col-md-4">
+                <div class="contactinfo">
+                  <img class="qrcode" style="margin-top: 40px;" v-bind:src="gzhqrcode" alt="">
+                  <p>扫描二维码，关注微信公众号</p>
+                  <h1>"</h1>
+                  <h4>咨询电话</h4>
+                  <p>400-6997-999转3</p>
+                  <p>132-0372-3858</p>
+                  <h4>咨询时间</h4>
+                  <p>周一至周六 09：00~20：00</p>
+                </div>
+              </div>
+              <div class="col-xs-8 col-md-8">
+                <div class="contactmap" id="contactmap">
+                  
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="footwraper">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- FOOTER ABOUT -->
+          <div class="col-md-4">
+              <div class="logo_name">
+                <img src="images/518/logo.png" alt="">
+                <p>518快运</p>
+              </div>
+          </div>
+          
+          <!-- Subscribe -->
+          <div class="col-md-4">
+              <ul class="footlist">
+                <li><a :href="'index.html?v='+version">网站首页&nbsp;&nbsp; HOME</a></li>
+                <li><a :href="'placeorder.html?v='+version">在线下单&nbsp;&nbsp; PLACEORDER</a></li>
+                <li><a :href="'priceexp.html?v='+version">价格说明&nbsp;&nbsp; PRICEDESC</a></li>
+                <li><a :href="'employ.html?v='+version">招募游侠&nbsp;&nbsp; RECRUIT</a></li>
+                <li><a :href="'contact.html?v='+version">联系我们&nbsp;&nbsp; CONTACT</a></li>
+                <li><a :href="'download.html?v='+version">软件下载&nbsp;&nbsp; DOWNLOAD</a></li>
+                <li><a :href="'usercenter_order.html?v='+version">个人中心&nbsp;&nbsp; USERCENTER</a></li>
+              </ul>
+          </div>
+
+          <!--company about-->
+          <div class="col-md-4">
+              <div class="companyifno">
+                <h3>{{company}}</h3>
+                <p>服务热线：{{fwtel}}</p>
+                <p>公司地址：{{companyadd}}</p>   
+                <p>{{beian}}</p>
+                <img v-bind:src="gzhqrcode" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="js/vue.min.js"></script>
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.cookie.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/own-menu.js"></script> 
+<script src="js/jquery.isotope.min.js"></script> 
+<script src="js/jquery.prettyPhoto.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+<script>document.write("<script type='text/javascript' src='js/main.js?v=" +(new Date()).getTime()+ "'><\/script>");</script>
+<script>document.write("<script type='text/javascript' src='js/indexdeel/contact.js?v=" +(new Date()).getTime()+ "'><\/script>");</script>
+<!-- begin map script--> 
+<script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp"></script>
+<script type="text/javascript">
+/*==========  Map  ==========*/
+window.onload=function(){
+      function init() {
+          var center =new qq.maps.LatLng(30.566348,104.050140);
+          var map = new qq.maps.Map(document.getElementById("contactmap"), {
+              // 地图的中心地理坐标。
+              center: center,
+              zoom: 12,
+              mapTypeId: qq.maps.MapTypeId.ROADMAP
+          });
+          var infoWin = new qq.maps.InfoWindow({
+              map: map,
+              content: "成都团团赚赚科技有限公司",
+              position: center,
+              zIndex: 10,
+              visible: true
+          });
+      }
+      init();//记得提醒它们把坐标换成那个公司的坐标
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="快运,跑腿,闲暇赚钱">
+<meta name="description" content="518快运,快捷服务您的生活">
+<link rel="icon" href="images/518/logo.png" type="image/x-icon"/>
+<title>518快运</title>
+
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css?v=1.02" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+
+
+<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+<!-- Wrap -->
+<div id="wrap"> 
+  
+  <!-- header -->
+  <header> 
+    
+    <!-- Logo -->
+    <div class="container">
+      <div class="logo"><a href="index.html"><img class="img-responsive" src="images/518/logo.png" alt="" ></a></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container navcontainer">
+        <ul class="nav ownmenu">
+          <li> <a :href="'usercenter_order.html?v='+version">个人中心</a></li>
+          <li class="active"> <a :href="'download.html?v='+version">软件下载</a> </li>
+          <li> <a :href="'contact.html?v='+version">联系我们</a> </li>
+          <li> <a :href="'employ.html?v='+version">招募游侠</a> </li>
+          <li> <a :href="'priceexp.html?v='+version">价格说明</a> </li>
+          <li> <a :href="'placeorder.html?v='+version">在线下单</a> </li>
+          <li> <a :href="'index.html?v='+version">首页</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- SUB BANNER -->
+  <section class="sub-bnr" v-cloak>
+    <img :src="picimg" alt="pic" style="width: 100%;height: auto;">
+  </section>
+  
+  <!-- Content -->
+  <div id="content"> 
+
+    <!-- Growth Stats -->
+    <section class="growth-stats download">
+      <div class="growth-stats-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="counter">
+                <h3>为什么加入518？</h3>
+                <p class="title">
+                  <i class="fa fa-clock-o"></i>
+                时间自由</p>
+                <p class="smalldesc">自由支配工作时间,工作生活完美平衡。</p>
+                <p class="title">
+                  <i class="fa fa-money"></i>
+                收入破万</p>
+                <p class="smalldesc">订单源源不断,努力接单月入破万,生活有保障。</p>
+                <p class="title">
+                  <i class="fa fa-gift"></i>
+                不同乐趣</p>
+                <p class="smalldesc">挑战自己，发现不同乐趣，丰富社交生活圈，体面挣钱。</p>
+              </div>
+              <div class="block lefttop"></div>
+              <div class="block rightbot"></div>
+            </div>
+            <div class="col-md-7">
+              <div class="qrcode">
+                <div class="codewraper">
+                  <img v-bind:src="riderqrcode" alt="" v-cloak>
+                  <div class="name"><a style="display: block;width: 100%;height: 100%;" :href="ridercodeurl" target="_blank">518游侠端APP</a></div>
+                </div>
+              </div>
+              <div class="qrcode">
+                <div class="codewraper">
+                  <img v-bind:src="appqrcode" alt="" v-cloak>
+                  <div class="name"><a style="display: block;width: 100%;height: 100%;" :href="appcodeurl" target="_blank">518客户端APP</a></div>
+                </div>
+              </div>
+              <div class="joindescwrap">
+                <h1>扫码加入518快运</h1>
+                <p>享受自由工作时间，想做多久，想赚多少，随我所愿。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="footwraper">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- FOOTER ABOUT -->
+          <div class="col-md-4">
+              <div class="logo_name">
+                <img src="images/518/logo.png" alt="">
+                <p>518快运</p>
+              </div>
+          </div>
+          
+          <!-- Subscribe -->
+          <div class="col-md-4">
+              <ul class="footlist">
+                <li><a :href="'index.html?v='+version">网站首页&nbsp;&nbsp; HOME</a></li>
+                <li><a :href="'placeorder.html?v='+version">在线下单&nbsp;&nbsp; PLACEORDER</a></li>
+                <li><a :href="'priceexp.html?v='+version">价格说明&nbsp;&nbsp; PRICEDESC</a></li>
+                <li><a :href="'employ.html?v='+version">招募游侠&nbsp;&nbsp; RECRUIT</a></li>
+                <li><a :href="'contact.html?v='+version">联系我们&nbsp;&nbsp; CONTACT</a></li>
+                <li><a :href="'download.html?v='+version">软件下载&nbsp;&nbsp; DOWNLOAD</a></li>
+                <li><a :href="'usercenter_order.html?v='+version">个人中心&nbsp;&nbsp; USERCENTER</a></li>
+              </ul>
+          </div>
+
+          <!--company about-->
+          <div class="col-md-4">
+              <div class="companyifno">
+                <h3>{{company}}</h3>
+                <p>服务热线：{{fwtel}}</p>
+                <p>公司地址：{{companyadd}}</p>   
+                <p>{{beian}}</p>
+                <img v-bind:src="gzhqrcode" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+<script src="js/vue.min.js"></script>
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.cookie.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/own-menu.js"></script> 
+<script src="js/jquery.isotope.min.js"></script> 
+<script src="js/jquery.prettyPhoto.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+<script>document.write("<script type='text/javascript' src='js/main.js?v=" +(new Date()).getTime()+ "'><\/script>");</script>
+<script>document.write("<script type='text/javascript' src='js/indexdeel/download.js?v=" +(new Date()).getTime()+ "'><\/script>");</script>
+</body>
+</html>

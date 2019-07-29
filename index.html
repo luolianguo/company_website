@@ -1,0 +1,442 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="快运,跑腿,闲暇赚钱">
+<meta name="description" content="518快运,快运服务便捷您的生活">
+<link rel="icon" href="images/518/logo.png" type="image/x-icon"/>
+<title>518快运</title>
+
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css?v=1.02" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+<link href="css/myAlert.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/jquery.bxslider.css">
+<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Wrap -->
+<div id="wrap"> 
+  
+  <!-- header -->
+  <header> 
+    
+    <!-- Logo -->
+    <div class="container">
+      <div class="logo"><a href="index.html"><img class="img-responsive" src="images/518/logo.png" alt="" ></a></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container navcontainer">
+        <ul class="nav ownmenu">
+          <li> <a :href="'usercenter_order.html?v='+version">个人中心</a></li>
+          <li> <a :href="'download.html?v='+version">软件下载</a> </li>
+          <li> <a :href="'contact.html?v='+version">联系我们</a> </li>
+          <li> <a :href="'employ.html?v='+version">招募游侠</a> </li>
+          <li> <a :href="'priceexp.html?v='+version">价格说明</a> </li>
+          <li> <a :href="'placeorder.html?v='+version">在线下单</a> </li>
+          <li class="active"> <a :href="'index.html?v='+version">首页</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <!--======= 首页轮播图 =========-->
+  <section class="home-slider"> 
+    <!-- 轮播图加载界面 -->
+    <div id="loader" class="hom-slie">
+      <div class="tp-loader spinner0"> <span class="dot1"></span> <span class="dot2"></span> <span class="bounce1"></span> <span class="bounce2"></span> <span class="bounce3"></span> </div>
+    </div>
+
+    <!-- 轮播图start -->
+    <div class="tp-banner-container">
+      <div class="tp-banner">
+        <!-- <ul>
+          <li v-for="item in bannerlist" data-transition="random" v-on:click="jumpto(item.url)" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" > 
+            <img v-cloak v-bind:src="item.path" alt="slider"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat"/>
+          </li>
+        </ul> -->
+        <ul class="bxslider">
+            <li v-cloak v-for="item in bannerlist">
+                <img v-bind:src="item.path" alt="slider image">
+            </li>
+        </ul> 
+      </div>
+    </div>
+    <!-- 轮播图end -->
+  </section>
+
+  <!-- Content -->
+  <div id="content"> 
+    
+    <!-- Intro -->
+    <section class="intro padding-top-30">
+      <div class="container">
+        <div class="intro-small">
+          <div class="introcontaner">
+              <div class="introitem">
+                <div class="pointList">
+                    <img src="images/518/phone.png" alt="" class="ssMessIcon">
+                    <div class="desc">
+                      <p class="title" style="text-align:center;fong-size:1.1rem;position:relative;top:30px;">无需预约，随叫随到</p>
+                      <p class="text">
+                          无需预约，随时下单，无论何时何地，518二十四小时随叫随到，竭诚为您服务。
+                      </p>
+                    </div>
+                </div>
+              </div>
+              <div class="introitem">
+                <div class="pointList">
+                    <img src="images/518/md.png" alt="" class="ssMessIcon">
+                    <div class="desc">
+                      <p class="title" style="text-align:center;fong-size:1.1rem;position:relative;top:30px;">专人直送，安全无忧</p>
+                      <p class="text">
+                          专人即取即送，无中转环节，直达目的地，全程实时监控，先行赔付保障，贴心又安心。
+                      </p>
+                    </div>
+                </div>
+              </div>
+              <div class="introitem">
+                <div class="pointList">
+                    <img src="images/518/tm.png" alt="" class="ssMessIcon">
+                    <div class="desc">
+                      <p class="title" style="text-align:center;fong-size:1.1rem;position:relative;top:30px;">平均同城1小时速达</p>
+                      <p class="text">
+                          518承诺：直线距离5公里，60分钟送达，每增加5公里加30分钟，超时退款！
+                      </p>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Welcome -->
+    <section class="welcome padding-bottom-30">
+      <div class="container">
+        <div class="small-intro">
+          <h1 class="welcometitel">
+            全行业定制化配送解决方案 服务无忧 体验最优
+          </h1>
+          <h3 class="small_welcometitle">超过10000万+来自不同行业的商家选择518</h3>
+        </div>
+      </div>
+    </section>
+    
+    <!-- TESTI -->
+    <section class="testi padding-top-40">
+      <div class="testiwraper">
+        <div class="container">
+          <div class="servicetype">
+                <div class="wraper">
+                    <div class="serviceitem">
+                        <div class="content">
+                          <img src="images/518/dfk1.png" alt="">
+                        </div>
+                        <div class="content">
+                          <div class="title">
+                            客户端
+                          </div>
+                          <div class="shortdesc">
+                            App实时显示游侠信息
+                          </div>
+                          <div class="desc">
+                            用户通过App呼叫游侠,实时显示游侠跑腿公里数等信息。
+                          </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wraper">
+                    <div class="serviceitem">
+                        <div class="content">
+                          <img src="images/518/dfk2.png" alt="">
+                        </div>
+                        <div class="content">
+                          <div class="title">
+                            微信端
+                          </div>
+                          <div class="shortdesc">
+                            微信叫跑腿，简单又方便
+                          </div>
+                          <div class="desc">
+                            微信搜索518快运小程序，自动获取用户所在位置，直接下单。
+                          </div>
+                        </div>
+                    </div>
+                </div>
+          </div>
+          <div class="servicetype">
+            <div class="wraper">
+                <div class="serviceitem">
+                    <div class="content">
+                      <img src="images/518/dfk3.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        配送端
+                      </div>
+                      <div class="shortdesc">
+                        自动生成客户位置,路线图
+                      </div>
+                      <div class="desc">
+                        游侠在街道订单后自动生成客户位置、路线图等。
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wraper">
+                <div class="serviceitem">
+                    <div class="content">
+                      <img src="images/518/dfk4.png" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="title">
+                        Web端
+                      </div>
+                      <div class="shortdesc">
+                        智能移动终端
+                      </div>
+                      <div class="desc">
+                        直接从移动端浏览器登录下单，无需下载APP。
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ABOUT -->
+    <section class="welcome padding-bottom-30">
+      <div class="container">
+        <div class="small-intro">
+          <h1 class="welcometitel">
+            全行业定制化配送解决方案 服务无忧 体验最优
+          </h1>
+          <h3 class="small_welcometitle">超过10000万+来自不同行业的商家选择518</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="servicelist padding-top-40">
+      <div class="servicelistwraper">
+        <div class="container">
+            <div class="servicemenu">
+              <ul>
+                <li>
+                  <img class="back" src="images/518/servicetype1.jpg" alt="">
+                  <a :href="'placeorder_send.html?v='+version">
+                    <div class="cover">
+                      <p>外卖餐饮配送</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <img class="back" src="images/518/servicetype2.jpg" alt="">
+                  <a :href="'placeorder_send.html?v='+version">
+                    <div class="cover">
+                      <p>鲜花配送</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <img class="back" src="images/518/servicetype3.jpg" alt="">
+                  <a :href="'placeorder_send.html?v='+version">
+                    <div class="cover">
+                      <p>3C数码配送</p>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <img class="back" src="images/518/servicetype4.jpg" alt="">
+                  <a :href="'placeorder_send.html?v='+version">
+                    <div class="cover">
+                      <p>蛋糕配送</p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="menudetail">
+              <div class="rotate infiniterotate infinite animated">
+                <img src="images/518/rotate.png" alt="#" />
+              </div>
+              <div class="level1">
+                <div class="left">
+                  <div class="levelitem levelitem1 visible">全程覆盖,无距离限制</div>
+                  <div class="levelitem levelitem2">重大节日高峰，配送运力快速调配</div>
+                  <div class="levelitem levelitem3">全程覆盖,无距离限制</div>
+                  <div class="levelitem levelitem4">全程覆盖,无距离限制</div>
+                </div>
+                <div class="right">
+                  <div class="levelitem levelitem1 visible">中午、晚上订餐高峰期，配送运力快速调配</div>
+                  <div class="levelitem levelitem2">平均10秒内接单，同城59分钟内完成配送</div>
+                  <div class="levelitem levelitem3">实际显示配送轨迹，安全放心</div>
+                  <div class="levelitem levelitem4">对蛋糕接单跑男进行专业培训</div>
+                </div>
+              </div>
+              <div class="level2">
+                  <div class="levelitem levelitem1 visible">一对一服务，专业高效</div>
+                  <div class="levelitem levelitem2">一对一服务，专业高效</div>
+                  <div class="levelitem levelitem3">一对一服务，专业高效</div>
+                  <div class="levelitem levelitem4">一对一服务，专业高效</div>
+              </div>
+              <div class="level3">
+                  <div class="levelitem levelitem1 visible">支持取餐免打扰模式</div>
+                  <div class="levelitem levelitem2">支持取餐免打扰模式</div>
+                  <div class="levelitem levelitem3">支持取餐免打扰模式</div>
+                  <div class="levelitem levelitem4">支持取餐免打扰模式</div>
+              </div>
+              <div class="level4">
+                  <div class="levelitem levelitem1 visible">着装统一、干净、整洁</div>
+                  <div class="levelitem levelitem2">着装统一、干净、整洁</div>
+                  <div class="levelitem levelitem3">着装统一、干净、整洁</div>
+                  <div class="levelitem levelitem4">着装统一、干净、整洁</div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- JOIN -->
+    <section class="welcome padding-bottom-30">
+      <div class="container">
+        <div class="small-intro">
+          <h1 class="welcometitel">
+            518快运 全国城市游侠合作计划
+          </h1>
+          <h3 class="small_welcometitle">共创分享经济奇迹</h3>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Growth Stats -->
+    <section class="growth-stats">
+      <div class="growth-stats-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <div class="counter">
+                <h3>为什么加入518？</h3>
+                <p class="title">
+                  <i class="fa fa-clock-o"></i>
+                时间自由</p>
+                <p class="smalldesc">自由支配工作时间,工作生活完美平衡。</p>
+                <p class="title">
+                  <i class="fa fa-money"></i>
+                收入破万</p>
+                <p class="smalldesc">订单源源不断,努力接单月入破万,生活有保障。</p>
+                <p class="title">
+                  <i class="fa fa-gift"></i>
+                不同乐趣</p>
+                <p class="smalldesc">挑战自己，发现不同乐趣，丰富社交生活圈，体面挣钱。</p>
+              </div>
+              <div class="block lefttop"></div>
+              <div class="block rightbot"></div>
+            </div>
+            <div class="col-md-7">
+              <div class="qrcode">
+                <div class="codewraper">
+                  <img v-bind:src="riderqrcode" alt="" v-cloak>
+                  <div class="name"><a style="display: block;width: 100%;height: 100%;" :href="ridercodeurl" target="_blank">518游侠端APP</a></div>
+                </div>
+              </div>
+              <div class="qrcode">
+                <div class="codewraper">
+                  <img v-bind:src="appqrcode" alt="" v-cloak>
+                  <div class="name"><a style="display: block;width: 100%;height: 100%;" :href="appcodeurl" target="_blank">518客户端APP</a></div>
+                </div>
+              </div>
+              <div class="joindescwrap">
+                <h1>扫码加入518快运</h1>
+                <p>享受自由工作时间，想做多久，想赚多少，随我所愿。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div> 
+    
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="footwraper">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- FOOTER ABOUT -->
+          <div class="col-md-4">
+              <div class="logo_name">
+                <img src="images/518/logo.png" alt="">
+                <p>518快运</p>
+              </div>
+          </div>
+          
+          <!-- Subscribe -->
+          <div class="col-md-4">
+              <ul class="footlist">
+                <li><a :href="'index.html?v='+version">网站首页&nbsp;&nbsp; HOME</a></li>
+                <li><a :href="'placeorder.html?v='+version">在线下单&nbsp;&nbsp; PLACEORDER</a></li>
+                <li><a :href="'priceexp.html?v='+version">价格说明&nbsp;&nbsp; PRICEDESC</a></li>
+                <li><a :href="'employ.html?v='+version">招募游侠&nbsp;&nbsp; RECRUIT</a></li>
+                <li><a :href="'contact.html?v='+version">联系我们&nbsp;&nbsp; CONTACT</a></li>
+                <li><a :href="'download.html?v='+version">软件下载&nbsp;&nbsp; DOWNLOAD</a></li>
+                <li><a :href="'usercenter_order.html?v='+version">个人中心&nbsp;&nbsp; USERCENTER</a></li>
+              </ul>
+          </div>
+
+          <!--company about-->
+          <div class="col-md-4">
+              <div class="companyifno">
+                <h3 v-cloak>{{company}}</h3>
+                <p v-cloak>服务热线：{{fwtel}}</p>
+                <p v-cloak>公司地址：{{companyadd}}</p>   
+                <p v-cloak>{{beian}}</p>
+                <img v-bind:src="gzhqrcode" alt="" v-cloak>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="dilogmessage"></div>
+</div>
+<script src="js/vue.min.js"></script>
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.cookie.js"></script><!-- 假的其实时session -->
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/own-menu.js"></script> 
+<script src="js/jquery.isotope.min.js"></script> 
+<script src="js/jquery.prettyPhoto.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+
+<script>document.write("<script type='text/javascript' src='js/main.js?v=" +(new Date()).getTime()+ "'><\/script>");</script>
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script src="layer/layer.js"></script>
+<script type="text/javascript" src="js/md5.js"></script>
+<script src="js/custom.js"></script>
+<script>document.write("<script type='text/javascript' src='js/indexdeel/functiondeel.js?v=" +(new Date()).getTime()+ "'><\/script>");</script>
+
+</body>
+</html> 

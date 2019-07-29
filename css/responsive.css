@@ -1,0 +1,197 @@
+@media(min-width:1400px) and (max-width:1920px) {
+}
+@media(min-width:1200px) and (max-width:1400px) {
+.latest-work .col-4 .item.filter-home {
+	width: 100%;
+}
+.latest-work .col-4 .item.filter-home li {
+	display: inline-block;
+	width: auto;
+}
+.latest-work .col-4 .item.filter-home li a {
+	padding: 0 10px;
+	margin-top: -2px;
+}
+.latest-work .position-center-center {
+	width: 100%;
+	text-align: center;
+}
+.latest-work .filter {
+	min-height: auto;
+	height: 80px;
+}
+.fst-up {
+	margin-top: 0px;
+}
+}
+@media(max-width:1600px) {
+.about-text{
+	padding-right:40px;
+}
+.team-text{
+	padding-bottom:50px;
+}
+
+}
+@media(min-width:992px) and (max-width:1199px) {
+header .navbar li {
+	margin: 0 10px;
+}
+header .navbar .half-part {
+	margin-left: 0px !important;
+}
+header .ownmenu {
+	float: right;
+}
+header .container {
+	position: relative;
+}
+.testi .col-md-8 img{
+}
+
+}
+@media(min-width:768px) and (max-width:991px) {
+header .ownmenu ul.dropdown {
+	padding: 0px;
+}
+.promos {
+	text-align: center;
+}
+.promos .text-right {
+	text-align: center;
+}
+header {
+	padding: 0px;
+}
+header .navbar {
+	width: 100%;
+}
+.top-bar {
+	width: 100%;
+}
+footer h5 {
+	display: inline-block;
+	width: 100%;
+	margin-top: 30px;
+}
+header .navbar li {
+	margin: 0 5px;
+}
+header .navbar .half-part {
+}
+header .ownmenu {
+	float: right;
+	width: auto;
+}
+header .container {
+	position: relative;
+}
+.contact-page .growth-stats .counter{
+	margin-top:30px;
+}
+.services li{
+	width:50%;
+	float:left;
+}
+.clients li{
+	width:33.3333%;
+	float:left;
+	margin-bottom:30px;
+}
+footer .subcribe{
+	padding-top:30px;
+	margin-top:30px;
+}
+}
+@media(max-width:767px) {
+
+header {
+	display: inline-block;
+	height: auto;
+	padding-bottom: 20px;
+}
+header .navbar li {
+	margin: 0px;
+}
+header .navbar li a {
+	padding: 10px 0;
+	text-align: center;
+}
+header .navbar li a:before {
+	height: 1px;
+}
+header nav {
+	float: none;
+	width: 100%;
+}
+header nav .ownmenu .indicator {
+	display: block;
+}
+header nav li a {
+	display: inline-block;
+	width: 100%;
+	float: none;
+}
+.ownmenu > li.showhide span {
+	line-height: 50px;
+	display: inline-block;
+	width: 100%;
+}
+.ownmenu > li.showhide {
+	text-align: center;
+	color: #fff;
+	font-size: 20px;
+}
+.ownmenu > li.showhide span.title {
+	margin: 0px;
+}
+.ownmenu > li > a {
+	padding: 10px 0;
+	text-align: left;
+}
+.ownmenu .indicator {
+	display: block;
+}
+header .social {
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.clients li{
+	width:33.3333%;
+	float:left;
+	margin-bottom:30px;
+}
+footer .subcribe{
+	padding-top:30px;
+	margin-top:30px;
+}
+.rights{
+	text-align:center;
+}
+.rights .text-right{
+	text-align:center;
+	margin-top:10px;
+}
+footer h6{
+	margin-top:30px;
+	display:inline-block;
+	width:100%;
+}
+}
+@media (max-width:640px) {
+}
+@media(max-width:540px) {
+.clients li{
+	width:50%;
+	float:left;
+	margin-bottom:30px;
+}
+}
+@media(max-width:440px) {
+}
+@media(max-width:320px) {
+}
+@media(max-height: 700px) {
+}

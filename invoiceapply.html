@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="快运,跑腿,闲暇赚钱">
+<meta name="description" content="518快运,快捷服务您的生活">
+<link rel="icon" href="images/518/logo.png" type="image/x-icon"/>
+<title>518快运</title>
+
+<!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+<link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link href="css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link href="css/ionicons.min.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/style.css?v=1.02" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/custom.css" rel="stylesheet" type="text/css">
+
+
+<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  
+  <!-- 登录注册模块start -->
+  <div id="loginmodel">
+    <div class="logreg">
+      <div class="closebtn">
+        <div id="cbtn"><a href="./index.html"><img src="images/518/closebtn.png"></a></div>
+      </div>
+      <div class="switchnav">
+        <div class="navitem">
+          <div class="log item active">登录</div>
+        </div>
+        <div class="navitem">
+          <div class="reg item">注册</div>
+        </div>
+      </div>
+      <div class="forget">
+        <div class="fdpwdtitle">重置密码</div>
+      </div>
+      <div class="content">
+        <ul class="logandreg">
+          <li>
+            <div class="contentitem highsplit">
+              <input class="input" id="account" type="text" placeholder="请输入您的手机号">
+            </div>
+            <div class="contentitem highsplit">
+              <input class="input" id="pwd" type="password" placeholder="请输入您的密码">
+            </div>
+            <div class="contentitem highsplit">
+              <button id="submit" class="submit" accesskey="enter">立即登录</button>
+            </div>
+            <div id="forgetpwd" class="tip">
+              <a href="#">忘记密码?</a>
+            </div>
+          </li>
+          <li>
+            <div class="contentitem">
+              <input class="input" id="tel" type="text" placeholder="请输入您的手机号">
+            </div>
+            <div class="contentitem">
+              <input class="input flex3" id="code" type="text" placeholder="请输入验证码">
+              <div class="codewrap">
+                <div class="getcode" id="getcode">
+                  获取验证码
+                </div>
+              </div>
+            </div>
+            <div class="contentitem">
+              <input class="input" id="repwd" type="password" placeholder="请输入您的密码">
+            </div>
+            <div class="contentitem">
+              <input class="input" id="rptpwd" type="password" placeholder="请重复您的密码">
+            </div>
+            <div class="contentitem">
+              <div id="regsubmit" class="submit">立即注册</div>
+            </div>
+          </li>
+        </ul>
+        <div id="findpwd">
+          <div class="contentitem">
+            <input class="input" id="fdtel" type="text" placeholder="请输入您的手机号">
+          </div>
+          <div class="contentitem">
+            <input class="input flex3" id="fdcode" type="text" placeholder="请输入您收到的验证码">
+            <div class="codewrap">
+              <div class="getcode" id="getfdcode">
+                获取验证码
+              </div>
+            </div>
+          </div>
+          <div class="contentitem">
+            <input class="input" id="fdpwd" type="password" placeholder="请输入您的密码">
+          </div>
+          <div class="contentitem">
+            <input class="input" id="rptfdpwd" type="password" placeholder="请重复您的新密码">
+          </div>
+          <div class="contentitem">
+            <div id="fdsubmit" class="submit">重置密码</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 登录注册模块end -->
+
+<!-- Wrap -->
+<div id="wrap"> 
+  
+  
+  <!-- header -->
+  <header> 
+    
+    <!-- Logo -->
+    <div class="container">
+      <div class="logo"><a href="index.html"><img class="img-responsive" src="images/518/logo.png" alt="" ></a></div>
+    </div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+      <div class="container navcontainer">
+        <ul class="nav ownmenu">
+          <li class="active"> <a :href="'usercenter_order.html?v='+version">个人中心</a></li>
+          <li> <a :href="'download.html?v='+version">软件下载</a> </li>
+          <li> <a :href="'contact.html?v='+version">联系我们</a> </li>
+          <li> <a :href="'employ.html?v='+version">招募游侠</a> </li>
+          <li> <a :href="'priceexp.html?v='+version">价格说明</a> </li>
+          <li> <a :href="'placeorder.html?v='+version">在线下单</a> </li>
+          <li> <a :href="'index.html?v='+version">首页</a> </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  
+  <!-- Content -->
+  <div id="content">
+    <section class="blog usercenterpage blog-page padding-top-80 padding-bottom-150">
+      <div class="container"> 
+        
+        <!-- Row -->
+        <div class="row" id="invoicedeel"> 
+          <div class="col-xs-2 col-md-2 col-sm-2">
+            <div class="menulist">
+              <ul>
+                <li class="firstcategory">
+                  <a :href="'usercenter_order.html?v='+version">
+                    <i class="fa fa-list"></i>
+                    我的订单
+                  </a>
+                </li>
+                <li class="firstcategory">
+                  <p>
+                    <i class="fa fa-money"></i>
+                    我的账户
+                  </p>
+                  <ul>
+                    <li class="secondcategory">
+                      <a :href="'usercenter_balance.html?v='+version">账户余额</a>
+                    </li>
+                    <li class="secondcategory">
+                      <a :href="'usercenter_recharge.html?v='+version">充值</a>
+                    </li>
+                    <li class="secondcategory">
+                      <a :href="'usercenter_ticket.html?v='+version">优惠券</a>
+                    </li>
+                    <li class="secondcategory active">
+                      <a :href="'usercenter_invoice.html?v='+version">申请发票</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="firstcategory">
+                  <p>
+                    <i class="fa fa-cog"></i>
+                    设置
+                  </p>
+                  <ul>
+                    <li class="secondcategory">
+                      <a :href="'usercenter_pwd.html?v='+version">修改密码</a>
+                    </li>
+                    <li class="secondcategory">
+                      <a :href="'usercenter_info.html?v='+version">个人信息</a>
+                    </li>
+                    <li class="secondcategory" v-on:click="logout">
+                      <a href="#">退出登录</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-10 col-md-10 col-sm-10">
+            <div class="usercenterwrap">
+              <div class="invoicetip">
+                <h6 class="invoicetitlebig">申请发票</h6>
+              </div>
+              <div class="invoiceform">
+                <div class="flexbox invoiceformitem">
+                  <div class="title flex_item">申请金额：</div>
+                  <div class="flex_item flex4"><span class="highlight" v-cloak>￥{{invoicemoney}}</span></div>
+                </div>
+                <div class="flexbox invoiceformitem">
+                  <div class="title flex_item"><span>*</span>发票类型：</div>
+                  <div class="flex_item flex4">
+                    <div class="invoicetype" v-on:click="typeselect(0)" v-bind:class="typeselected?'active':''">电子发票</div>
+                    <!-- <div class="invoicetype" v-on:click="typeselect(1)" v-bind:class="typeselected?'':'active'">纸质发票</div> -->
+                  </div>
+                </div>
+                <div class="flexbox invoiceformitem">
+                  <div class="title flex_item"><span>*</span>抬头类型：</div>
+                  <div class="flex_item flex4">
+                    <div class="titletype"><input v-on:click="titletypeselect(0)" name="titletype" type="radio" checked="checked" /><span>个人</span></div>
+                    <div class="titletype"><input v-on:click="titletypeselect(1)" name="titletype" type="radio"/><span>单位</span></div>
+                  </div>
+                </div>
+                <div class="flexbox invoiceformitem">
+                  <div class="title flex_item"><span>*</span>发票内容：</div>
+                  <div class="flex_item flex4">
+                    <div class="titletype"><input v-model="selectinvoicecontent" value="0" type="radio"/><span>服务费</span></div>
+                    <div class="titletype"><input v-model="selectinvoicecontent" value="1" type="radio"/><span>派送费</span></div>
+                  </div>
+                </div>
+                <div class="flexbox invoiceformitem" v-if="titletype">
+                  <div class="title flex_item"><span>*</span>发票抬头：</div>
+                  <div class="flex_item flex4 forminput">
+                    <input type="text" id="invoicetitle" v-model="title" placeholder="请输入发票抬头" />
+                  </div>
+                </div>
+                <div class="flexbox invoiceformitem" v-if="!titletype">
+                  <div class="title flex_item"><span>*</span>单位名称：</div>
+                  <div class="flex_item flex4 forminput">
+                    <input type="text" id="companyname" v-model="title" placeholder="请输入单位名称" />
+                  </div>
+                </div>
+                <div class="flexbox invoiceformitem" v-if="!titletype">
+                  <div class="title flex_item"><span>*</span>税号：</div>
+                  <div class="flex_item flex4 forminput">
+                    <input type="text" id="taxnum" v-model="taxnum" placeholder="请输入税号" />
+                  </div>
+                </div>
+                <div class="flexbox invoiceformitem" v-if="typeselected">
+                  <div class="title flex_item"><span>*</span>收票人邮箱：</div>
+                  <div class="flex_item flex4 forminput">
+                    <input type="text" id="invoicemail" v-model="email" placeholder="请输入收票人邮箱" />
+                  </div>
+                </div>
+                <div class="flexbox invoiceformitem" v-if="!typeselected">
+                  <div class="title flex_item forminput"><span>*</span>收票地址：</div>
+                  <div class="flex_item flex4 forminput">
+                    <input type="text" id="invoiceaddress" v-model="address" placeholder="请输入收票地址" />
+                  </div>
+                </div>
+                <div class="flexbox invoiceformitem">
+                  <div class="title flex_item"></div>
+                  <div class="flex_item flex4">
+                    <div class="tipmessage">*[注]发票金额小于{{billpostmoney}}元，需到付邮费</div>
+                  </div>
+                </div>
+                <div class="flexbox invoiceformitem">
+                  <div class="title flex_item"></div>
+                  <div class="flex_item flex4">
+                    <div class="kpsm">
+                      <input type="checkbox" id="kpsmselect" v-model="readed" value="true">
+                      <span>本人已点击阅读并同意 <span class="textsky" id="invoicetipdetail">《 开票说明 》</span> 的全部内容</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flexbox invoiceformitem">
+                  <div class="title flex_item"></div>
+                  <div class="flex_item flex4">
+                    <div class="applyconfirm" v-on:click="applyconfirm">确认申请</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="kpsm">
+            <div class="kpsmcontent" v-html="content">{{content}}</div>
+            <div class="title">
+              <span class="cancel">我已了解</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer>
+    <div class="footwraper">
+      <div class="container">
+        <div class="row"> 
+          
+          <!-- FOOTER ABOUT -->
+          <div class="col-xs-4 col-md-4 col-sm-4">
+              <div class="logo_name">
+                <img src="images/518/logo.png" alt="">
+                <p>518快运</p>
+              </div>
+          </div>
+          
+          <!-- Subscribe -->
+          <div class="col-xs-4 col-md-4 col-sm-4">
+              <ul class="footlist">
+                <li><a :href="'index.html?v='+version">网站首页&nbsp;&nbsp; HOME</a></li>
+                <li><a :href="'placeorder.html?v='+version">在线下单&nbsp;&nbsp; PLACEORDER</a></li>
+                <li><a :href="'priceexp.html?v='+version">价格说明&nbsp;&nbsp; PRICEDESC</a></li>
+                <li><a :href="'employ.html?v='+version">招募游侠&nbsp;&nbsp; RECRUIT</a></li>
+                <li><a :href="'contact.html?v='+version">联系我们&nbsp;&nbsp; CONTACT</a></li>
+                <li><a :href="'download.html?v='+version">软件下载&nbsp;&nbsp; DOWNLOAD</a></li>
+                <li><a :href="'usercenter_order.html?v='+version">个人中心&nbsp;&nbsp; USERCENTER</a></li>
+              </ul>
+          </div>
+
+          <!--company about-->
+          <div class="col-xs-4 col-md-4 col-sm-4">
+              <div class="companyifno">
+                <h3>{{company}}</h3>
+                <p>服务热线：{{fwtel}}</p>
+                <p>公司地址：{{companyadd}}</p>   
+                <p>{{beian}}</p>
+                <img v-bind:src="gzhqrcode" alt="">
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="dilogmessage"></div>
+</div>
+<script src="js/vue.min.js"></script>
+<script src="js/jquery.min.js"></script> 
+<script src="js/jquery.cookie.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="js/own-menu.js"></script> 
+<script src="js/jquery.isotope.min.js"></script> 
+<script src="js/jquery.prettyPhoto.js"></script> 
+<script src="js/owl.carousel.min.js"></script> 
+
+<!-- SLIDER REVOLUTION 4.x SCRIPTS  --> 
+
+<script src="layer/layer.js"></script>
+<script>document.write("<script type='text/javascript' src='js/main.js?v=" +(new Date()).getTime()+ "'><\/script>");</script>
+<script src="js/indexdeel/logreg.js"></script>
+<script src="js/custom.js"></script>
+<script>document.write("<script type='text/javascript' src='js/usercenter/invoiceapplydeel.js?v=" +(new Date()).getTime()+ "'><\/script>");</script>
+</body>
+</html>
